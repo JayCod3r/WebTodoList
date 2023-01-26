@@ -1,12 +1,15 @@
 console.log("Loading localDB");
 var toDos = new LDB.Collection("ToDos");
 function CreateToDo(name, filler) {
+
     var todo = {
-        name: name,
-        filler: filler,
+        name: name = document.getElementById('InputTodo').value ,
+        filler: filler = document.getElementById('todoDescription').value,
         done: false,
         id: GetLastId() + 1
     }
+
+
     toDos.save(todo, function (_items) {
 
     });
