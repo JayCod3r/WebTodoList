@@ -114,7 +114,7 @@ function DisplayCards() {
 
 function DisplayCard(name, filler, id, done) {
 
-    document.getElementById("toDoHolder").innerHTML = document.getElementById("toDoHolder").innerHTML + '\n<!-- CardStart -->\n<div class="">\n<div class="col-sm">\n<div class="card" style="width: 18rem;">\n<img class="card-img-top" src="https://i.imgur.com/RXIshnn.jpeg" alt="Card image cap">\n<div class="card-body">\n<div class="row">\n<h5 class="card-title">' + name + '</h5>\n<h5 class="" id="' + id + '"></h5>\n</div>\n\n<p class="card-text">' + filler + '</p>\n<button onclick="ToggleDone(' + id + ')">' + ((done == true) ? ' Done' : ' Not Done') + '</button>\n<button onclick = "DeleteToDo(' + id + ')">Delete</button>\n</div>\n</div>\n</div>\n<!-- CardEnd -->';
+    document.getElementById("toDoHolder").innerHTML = document.getElementById("toDoHolder").innerHTML + '\n<div class="card" style="width: 18rem;">\n<img class="card-img-top" src="https://i.imgur.com/RXIshnn.jpeg" alt="Card image cap">\n<div class="card-body">\n<div class="row">\n<h5 class="card-title">' + name + '</h5>\n<h5 class="" id="' + id + '"></h5>\n</div>\n\n<p class="card-text">' + filler + '</p>\n<button onclick="ToggleDone(' + id + ')">' + ((done == true) ? ' Done' : ' Not Done') + '</button>\n<button onclick = "DeleteToDo(' + id + ')">Delete</button>\n</div>\n</div>';
 
 }
 
